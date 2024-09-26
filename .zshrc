@@ -21,15 +21,18 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 PATH="$PATH:$(pwd)/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
 
-eval "$(init zsh zoxide)"
+eval "$(zoxide init zsh)"
+source <(fzf --zsh)
 
 alias cd="z"
 
 alias ls="eza --icons=always"
 alias ll="ls -lh"
-alias la="ls -lAh"
+alias la="ls -lah"
+alias lt="ls -ha -TI .git"
 
 alias vim="nvim"
+alias vi="nvim"
 alias v="nvim"
 
 alias zcode="nvim ~/.zshrc"
