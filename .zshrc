@@ -15,12 +15,6 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# if type brew &>/dev/null; then
-#   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-#
-#   autoload -Uz compinit
-#   compinit
-# fi
 
 if type brew &>/dev/null
 then
@@ -66,4 +60,6 @@ alias vi="nvim"
 alias v="nvim"
 
 alias zcode="nvim ~/.zshrc"
+
+
 
