@@ -9,5 +9,7 @@ brew install \
   chatgpt firefox font-fira-code-nerd-font font-jetbrains-mono-nerd-font \
   github kitty notion tor-browser visual-studio-code vlc
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 stow .
 source ~/.zshrc

@@ -1,6 +1,5 @@
 \.git
 \.gitignore 
 
-^/scripts
 ^/README.*
-^/macos-install.sh
+^/setup-*.*
