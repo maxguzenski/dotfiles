@@ -735,7 +735,7 @@ font_size 15.0
 
 #: Terminal bell {{{
 
-# enable_audio_bell yes
+enable_audio_bell no
 
 #: The audio bell. Useful to disable it in environments that require
 #: silence.
@@ -1179,7 +1179,7 @@ font_size 15.0
 
 #: The foreground and background colors.
 
-background_opacity 0.9
+background_opacity 1.0
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if

@@ -1,6 +1,3 @@
-#
-# brew install eza zoxide zsh-autosuggestions zsh-syntax-highlighting powerlevel10k
-#
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -16,22 +13,35 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-if type brew &>/dev/null
-then
+if type brew &>/dev/null; then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
   autoload -Uz compinit
   compinit
+
+  # zstyle ':completion:*:*:*:default' menu yes select search
 fi
 
-zstyle ':completion:*:*:*:default' menu yes select search
+if [[ -r "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
+  source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+if [[ -r "/opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ]]; then 
+  source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+fi 
 
-eval "$(zoxide init zsh)"
-source <(fzf --zsh)
+if type zoxide &>/dev/null; then
+  eval "$(zoxide init zsh)"
+fi
 
+if type fzf &>/dev/null; then
+  source <(fzf --zsh)
+fi
+
+# if type starship &>/dev/null; then
+#   eval "$(starship init zsh)"
+# fi
+#
 
 #
 # Custom alias and commands 
@@ -60,6 +70,4 @@ alias vi="nvim"
 alias v="nvim"
 
 alias zcode="nvim ~/.zshrc"
-
-
 
