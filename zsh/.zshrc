@@ -38,10 +38,9 @@ if type fzf &>/dev/null; then
   source <(fzf --zsh)
 fi
 
-# if type starship &>/dev/null; then
-#   eval "$(starship init zsh)"
-# fi
-#
+
+# configure asdf if installed
+[[ ! -f /opt/homebrew/opt/asdf/libexec/asdf.sh ]] || . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 #
 # Custom alias and commands 
