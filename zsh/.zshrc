@@ -8,7 +8,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -30,23 +29,20 @@ if [[ -r "/opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-h
   source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 fi 
 
-if type zoxide &>/dev/null; then
-  eval "$(zoxide init zsh)"
-fi
+eval "$(zoxide init zsh)"
+eval "$(mise activate zsh)"
+source <(fzf --zsh)
 
-if type fzf &>/dev/null; then
-  source <(fzf --zsh)
-fi
+export FZF_DEFAULT_OPTS='--tmux center --border'
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+export EDITOR="nvim"
 
-# configure asdf if installed
-[[ ! -f /opt/homebrew/opt/asdf/libexec/asdf.sh ]] || . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 #
-# Custom alias and commands 
+# Aliases
 #
-
-PATH="$PATH:$(pwd)/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
 
 function fdex() {
   CMD=${1:-"zsh"}
@@ -69,4 +65,6 @@ alias vi="nvim"
 alias v="nvim"
 
 alias zcode="nvim ~/.zshrc"
+
+PATH="$PATH:$(pwd)/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
 

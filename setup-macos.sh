@@ -11,6 +11,8 @@ brew install \
   git \
   lazydocker \
   lazygit \
+  mise \
+  neofetch \
   neovim \
   powerlevel10k \
   ripgrep \
@@ -20,7 +22,8 @@ brew install \
   zellij \
   zoxide \
   zsh-autosuggestions \
-  zsh-fast-syntax-highlighting
+  zsh-fast-syntax-highlighting \
+  yazi
 
 brew install \
   chatgpt \
@@ -46,6 +49,3 @@ stow nvim
 stow bin
 
 source ~/.zshrc
-
-asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
-asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
