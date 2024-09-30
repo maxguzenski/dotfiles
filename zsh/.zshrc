@@ -43,7 +43,6 @@ export EDITOR="nvim"
 #
 # Aliases
 #
-
 function fdex() {
   CMD=${1:-"zsh"}
 	CONTAINER=`docker ps | rg -v CONTAINER | awk '-F ' ' {print $NF}' | fzf`

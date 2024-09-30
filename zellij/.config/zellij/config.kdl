@@ -311,7 +311,7 @@ pane_frames false
 // The name of the default layout to load on startup
 // Default: "default"
 //
-// default_layout "compact"
+//default_layout "compact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
@@ -343,7 +343,7 @@ pane_frames false
 //
 // copy_command "xclip -selection clipboard" // x11
 // copy_command "wl-copy"                    // wayland
-// copy_command "pbcopy"                     // osx
+copy_command "pbcopy"                     // osx
 
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
