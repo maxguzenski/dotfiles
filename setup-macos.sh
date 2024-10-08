@@ -40,6 +40,7 @@ brew install \
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 if [[ -f ~/.zshrc ]]; then
+  rm -f ~/.zshrc.bak.1
   mv ~/.zshrc ~/.zshrc.bak.1
 fi
 
