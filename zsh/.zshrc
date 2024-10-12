@@ -1,13 +1,18 @@
+THIS_PROMPT="starship"
 
-# source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-#
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-#
-# # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# se this_prompt is p10k 
+if [[ "$THIS_PROMPT" == "p10k" ]]; then
+  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+  
+  if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  fi
 
+  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+else
+  eval "$(starship init zsh)"
+fi
+  
 
 if type brew &>/dev/null; then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -26,7 +31,6 @@ if [[ -r "/opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-h
   source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 fi 
 
-eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
 source <(fzf --zsh)

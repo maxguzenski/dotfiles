@@ -1,3 +1,6 @@
+
+# format = '$all'
+
 [aws]
 disabled = true
 symbol = "  "
@@ -86,6 +89,9 @@ symbol = " "
 
 [ocaml]
 symbol = " "
+
+[os]
+disabled = true
 
 [os.symbols]
 Alpaquita = " "
