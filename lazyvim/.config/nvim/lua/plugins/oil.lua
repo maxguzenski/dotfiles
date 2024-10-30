@@ -8,6 +8,10 @@ return {
     opts = {
       view_options = {
         show_hidden = true,
+        is_always_hidden = function(name)
+          -- se name in ".git", "_build", "deps", "node_modules"
+          return vim.fn.match(name, [[\v(\.git|_build|deps|node_modules|.svelte-kit|.elixir_ls|.DS_Store)]]) > -1
+        end,
       },
       float = {
         padding = 5,
