@@ -1,6 +1,7 @@
 return {
   {
     "stevearc/oil.nvim",
+    enabled = false,
     keys = {
       { "<leader>o", "<cmd>Oil --float<CR>", desc = "Oil Explorer" },
       { "<leader>O", "<cmd>Oil --float ./<CR>", desc = "Oil Explorer (cwd)" },

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 brew install \
-  adsf \
   awscli \
   bat \
   eza \
@@ -14,7 +13,6 @@ brew install \
   mise \
   neofetch \
   neovim \
-  powerlevel10k \
   ripgrep \
   stow \
   tmux \
@@ -35,18 +33,19 @@ brew install \
   notion \
   tor-browser \
   visual-studio-code \
-  vlc
+  vlc \
+  zellij
 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 if [[ -f ~/.zshrc ]]; then
   rm -f ~/.zshrc.bak.1
   mv ~/.zshrc ~/.zshrc.bak.1
 fi
 
-stow zsh
-stow tmux
-stow nvim
-stow bin
+# stow zsh
+# stow tmux
+# stow nvim
+# stow bin
 
 source ~/.zshrc
