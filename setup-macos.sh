@@ -8,6 +8,7 @@ brew install \
   fzf \
   gh \
   git \
+  git-delta \
   lazydocker \
   lazygit \
   mise \
@@ -21,7 +22,8 @@ brew install \
   zoxide \
   zsh-autosuggestions \
   zsh-fast-syntax-highlighting \
-  yazi
+  yazi \
+  wget
 
 brew install \
   chatgpt \

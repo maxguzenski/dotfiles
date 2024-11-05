@@ -56,7 +56,7 @@ function fdex() {
 
 alias cd="z"
 
-alias ls="eza --icons=always"
+alias ls="eza --icons=always --group-directories-first"
 alias ll="ls -lh"
 alias la="ls -lah"
 alias lt="ls -ha -TI .git"
@@ -66,6 +66,7 @@ alias vi="nvim"
 alias v="nvim"
 
 alias zcode="nvim ~/.zshrc"
+alias lazygit="lazygit -ucf ~/.config/lazygit/config.yml"
 
 PATH="$PATH:$(pwd)/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
 
