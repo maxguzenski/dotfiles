@@ -18,3 +18,5 @@
   line-numbers = false
   hyperlinks = true
   side-by-side = false
+[diff]
+	tool = nvimdiff

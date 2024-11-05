@@ -66,6 +66,7 @@ alias c="clear"
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
+alias nvimdiff="nvim -d"
 
 alias zcode="nvim ~/.zshrc"
 alias lazygit="lazygit -ucf ~/.config/lazygit/config.yml"
