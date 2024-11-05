@@ -15,6 +15,6 @@
 [delta]
   navigate = true
   features = catppuccin-macchiato
-  line-numbers = true
+  line-numbers = false
   hyperlinks = true
   side-by-side = false
