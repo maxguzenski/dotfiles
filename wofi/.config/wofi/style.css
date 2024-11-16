@@ -52,8 +52,8 @@
 @define-color crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: "CaskaydiaCove Nerd Font", monospace;
-  font-size: 16px;
+  font-family: "FantasqueSansMono Nerd Font", monospace;
+  font-size: 15px;
 }
 
 /* Window */
@@ -68,7 +68,7 @@ window {
 /* Inner Box */
 #inner-box {
   margin: 5px;
-  padding: 10px;
+  padding: 5px;
   border: none;
   background-color: @base;
 }

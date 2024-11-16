@@ -1,3 +1,8 @@
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 THIS_PROMPT="starship"
 
 # se this_prompt is p10k 
@@ -68,7 +73,10 @@ alias vi="nvim"
 alias v="nvim"
 alias nvimdiff="nvim -d"
 
-alias zcode="nvim ~/.zshrc"
+alias zhypr="nvim ~/.config/hypr/hyprland.conf"
+alias zkitty="nvim ~/.config/kitty/kitty.conf"
+alias zzsh="nvim ~/.zshrc"
+
 alias lazygit="lazygit -ucf ~/.config/lazygit/config.yml"
 
 PATH="$PATH:$(pwd)/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
