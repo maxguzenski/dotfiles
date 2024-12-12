@@ -69,4 +69,4 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 # alias lazygit="lazygit -ucf ~/.config/lazygit/config.yml"
 
 
-PATH="$PATH:$(pwd)/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
+PATH="$PATH:$HOME/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
