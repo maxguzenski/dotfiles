@@ -68,6 +68,5 @@ alias zzsh="nvim ~/.zshrc"
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 # alias lazygit="lazygit -ucf ~/.config/lazygit/config.yml"
 
-
+XDG_CONFIG_HOME="$HOME/.config"
 PATH="$PATH:$HOME/.local/bin:/Applications/Postgres.app/Contents/Versions/16/bin"
-#PATH="/opt/homebrew/opt/tcl-tk@8/bin:$PATH"
