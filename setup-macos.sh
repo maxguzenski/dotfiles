@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if ! command -v brew >/dev/null 2>&1; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  echo >>/Users/max/.zprofile
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>/Users/max/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 brew install \
   awscli \
   bat \
@@ -12,42 +20,45 @@ brew install \
   lazydocker \
   lazygit \
   mise \
-  neofetch \
+  fastfetch \
   neovim \
   ripgrep \
   stow \
-  tmux \
   tree-sitter \
   zellij \
   zoxide \
   zsh-autosuggestions \
   zsh-fast-syntax-highlighting \
   yazi \
-  wget
+  wget \
+  starship
 
 brew install \
+  1password \
+  iterm2 \
   chatgpt \
   firefox \
   font-fira-code-nerd-font \
   font-jetbrains-mono-nerd-font \
   github \
-  kitty \
+  ghostty \
   notion \
   tor-browser \
   visual-studio-code \
+  whatsapp \
   vlc \
-  zellij
-
-# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  raycast
 
 if [[ -f ~/.zshrc ]]; then
   rm -f ~/.zshrc.bak.1
   mv ~/.zshrc ~/.zshrc.bak.1
 fi
 
-# stow zsh
-# stow tmux
-# stow nvim
-# stow bin
+stow zsh
+stow bin
+stow starship
+stow lazyvim
+stow yazi
+stow ghostty
 
 source ~/.zshrc
