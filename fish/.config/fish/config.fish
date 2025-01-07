@@ -24,9 +24,6 @@ alias v="nvim"
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-export EDITOR="nvim"
-
+set EDITOR "nvim"
 set XDG_CONFIG_HOME "$HOME/.config"
 set fish_greeting ""
-
-#fish_update_completions
