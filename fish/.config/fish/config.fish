@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+fish_add_path /opt/homebrew/bin
+
 starship init fish | source
 zoxide init fish | source
 fzf --fish | source
@@ -26,3 +28,5 @@ export EDITOR="nvim"
 
 set XDG_CONFIG_HOME "$HOME/.config"
 set fish_greeting ""
+
+#fish_update_completions

@@ -35,7 +35,6 @@ brew install \
 
 brew install \
   1password \
-  iterm2 \
   chatgpt \
   firefox \
   font-fira-code-nerd-font \

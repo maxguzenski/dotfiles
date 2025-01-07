@@ -1,9 +1,12 @@
 theme = catppuccin-mocha
 window-theme = ghostty
+macos-titlebar-style = tabs
 
 font-family = "JetBrainsMono Nerd Font Mono"
-font-size = 13
+font-size = 15
 background-opacity = 0.90
 
 keybind = ctrl+a>d=toggle_window_decorations
-keybind = alt+w=close_window
+keybind = ctrl+a>g=toggle_quick_terminal
+#keybind = alt+w=close_window
+
