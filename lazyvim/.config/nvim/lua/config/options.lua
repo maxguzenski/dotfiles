@@ -3,6 +3,5 @@
 -- Add any additional options here
 
 vim.g.snacks_animate = false
-
 -- vim.opt.pumblend = 10 -- for cmp menu
 -- vim.opt.winblend = 0 -- for documentation popup

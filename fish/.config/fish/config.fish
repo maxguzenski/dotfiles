@@ -3,6 +3,8 @@ if status is-interactive
 end
 
 fish_add_path /opt/homebrew/bin
+fish_add_path $HOME/.local/bin
+fish_add_path /Applications/Postgres.app/Contents/Versions/16/bin
 
 starship init fish | source
 zoxide init fish | source
@@ -20,10 +22,12 @@ alias lt="ls -ha -TI .git"
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
+
+alias zfish="nvim ~/.config/fish/config.fish"
 #alias nvimdiff="nvim -d"
 
-alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+#alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-set EDITOR "nvim"
+set EDITOR nvim
 set XDG_CONFIG_HOME "$HOME/.config"
 set fish_greeting ""
