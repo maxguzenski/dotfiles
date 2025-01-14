@@ -3,5 +3,14 @@
 -- Add any additional options here
 
 vim.g.snacks_animate = false
+vim.opt.list = false
+
+-- vim.opt.tabstop = 4
+-- vim.opt.softtabstop = 4
+-- vim.opt.shiftwidth = 4
+-- vim.opt.expandtab = true
+
+vim.opt.wrap = false
+-- vim.opt.colorcolumn = "120"
 -- vim.opt.pumblend = 10 -- for cmp menu
 -- vim.opt.winblend = 0 -- for documentation popup

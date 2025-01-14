@@ -8,3 +8,13 @@
 
 vim.keymap.set("i", "<C-S-h>", "<C-o>b", { desc = "Jumps words backforward" })
 vim.keymap.set("i", "<C-S-l>", "<C-o>w", { desc = "Jumps words forward" })
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- greatest remap ever
+vim.keymap.set("x", "<leader>p", [["_dP]])
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
