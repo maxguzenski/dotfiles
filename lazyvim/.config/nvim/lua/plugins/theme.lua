@@ -16,4 +16,7 @@ return {
       end,
     },
   },
+  -- {
+  --   "ayu-theme/ayu-vim",
+  -- },
 }
