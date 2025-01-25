@@ -31,3 +31,4 @@ alias zfish="nvim ~/.config/fish/config.fish"
 set EDITOR nvim
 set XDG_CONFIG_HOME "$HOME/.config"
 set fish_greeting ""
+set HOMEBREW_NO_ENV_HINTS 1
