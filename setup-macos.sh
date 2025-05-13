@@ -1,63 +1,73 @@
 #!/bin/bash
 
-if ! command -v brew >/dev/null 2>&1; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-  echo >>/Users/max/.zprofile
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>/Users/max/.zprofile
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+# if ! command -v brew >/dev/null 2>&1; then
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#
+#   echo >>/Users/max/.zprofile
+#   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>/Users/max/.zprofile
+#   eval "$(/opt/homebrew/bin/brew shellenv)"
+# fi
 
 brew install \
+  ast-grep \
   awscli \
   bat \
   eza \
+  fastfetch \
   fd \
+  fish \
   fzf \
   gh \
   git \
   git-delta \
   lazydocker \
   lazygit \
+  luarocks \
   mise \
-  fastfetch \
   neovim \
+  posting \
+  rclone \
   ripgrep \
+  starship \
   stow \
   tree-sitter \
-  zellij \
-  zoxide \
-  zsh-autosuggestions \
-  zsh-fast-syntax-highlighting \
-  yazi \
   wget \
-  starship
+  xh \
+  lazyvim \
+  zellij \
+  zoxide
 
 brew install \
   1password \
+  brave-browser \
   chatgpt \
+  cursor \
   firefox \
   font-fira-code-nerd-font \
   font-jetbrains-mono-nerd-font \
-  github \
   ghostty \
+  github \
+  google-chrome \
+  iterm2 \
   notion \
-  tor-browser \
+  notunes \
+  postgres-unofficial \
+  raycast \
+  rectangle \
+  spotify \
   visual-studio-code \
-  whatsapp \
   vlc \
-  raycast
+  whatsapp
 
-if [[ -f ~/.zshrc ]]; then
-  rm -f ~/.zshrc.bak.1
-  mv ~/.zshrc ~/.zshrc.bak.1
-fi
+# if [[ -f ~/.zshrc ]]; then
+#   rm -f ~/.zshrc.bak.1
+#   mv ~/.zshrc ~/.zshrc.bak.1
+# fi
 
-stow zsh
+stow fish
 stow bin
 stow starship
 stow lazyvim
 stow yazi
-stow ghostty
 
-source ~/.zshrc
+# source ~/.zshrc
