@@ -20,8 +20,10 @@ brew install \
   gh \
   git \
   git-delta \
+  helix \
   lazydocker \
   lazygit \
+  lazyvim \
   luarocks \
   mise \
   neovim \
@@ -33,7 +35,6 @@ brew install \
   tree-sitter \
   wget \
   xh \
-  lazyvim \
   zellij \
   zoxide
 
@@ -57,7 +58,8 @@ brew install \
   spotify \
   visual-studio-code \
   vlc \
-  whatsapp
+  whatsapp \
+  zed
 
 # if [[ -f ~/.zshrc ]]; then
 #   rm -f ~/.zshrc.bak.1
@@ -68,6 +70,7 @@ stow fish
 stow bin
 stow starship
 stow lazyvim
+stow zed
 stow yazi
 
 # source ~/.zshrc

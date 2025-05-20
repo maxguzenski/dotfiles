@@ -8,12 +8,13 @@ return {
     --   end,
     -- },
   },
-  -- {
-  --   "folke/snacks.nvim",
-  --   opts = {
-  --     indent = { scope = { enabled = true } },
-  --   },
-  -- },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      indent = { scope = { enabled = true } },
+      zen = { toggle = { dim = true } },
+    },
+  },
 }
 
 -- -- You can also add or configure plugins by creating files in this `plugins/` folder

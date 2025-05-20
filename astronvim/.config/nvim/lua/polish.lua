@@ -8,13 +8,20 @@ local function setup_indent_colors()
 end
 
 -- Configura após carregar o tema
+vim.api.nvim_create_autocmd("ColorScheme", {
+  -- pattern = "tokyonight-moon",
+  callback = setup_indent_colors,
+})
+
 -- vim.api.nvim_create_autocmd("ColorScheme", {
---   pattern = "tokyonight-moon",
+--   pattern = "catppuccin-macchiato",
 --   callback = setup_indent_colors,
 -- })
 
 -- Caso o tema já esteja carregado quando o script roda
-if vim.g.colors_name == "tokyonight-moon" then setup_indent_colors() end
+-- if vim.g.colors_name == "tokyonight-moon" then setup_indent_colors() end
+-- if vim.g.colors_name == "catppuccin-macchiato" then setup_indent_colors() end
+setup_indent_colors()
 
 vim.opt.cursorline = false
 vim.opt.signcolumn = "yes:2"

@@ -1,22 +1,16 @@
 return {
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "catppuccin",
-  --   },
-  -- },
   {
     "folke/tokyonight.nvim",
+    priority = 1000,
     opts = {
-      -- transparent = true,
-      on_highlights = function(hl, c)
-        -- hl.IblIndent = { fg = "#000000" }
-        -- hl.IblScope = { fg = "#515b86" }
-        hl.CursorLine = { bg = c.bg }
+      on_highlights = function(hl, _)
+        hl.SnacksIndent = { fg = "#2d324a" }
+        hl.SnacksIndentScope = { fg = "#3b4261" }
       end,
     },
   },
   -- {
-  --   "ayu-theme/ayu-vim",
+  --   "rebelot/kanagawa.nvim",
+  --   opts = {},
   -- },
 }
