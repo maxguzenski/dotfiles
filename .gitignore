@@ -1,3 +1,5 @@
 .DS_Store
 lazyvim/.config/nvim/lazy-lock.json
 lazyvim/.config/nvim/lazyvim.json
+zed/.config/zed/prompts/
+zed/.config/zed/embeddings/
