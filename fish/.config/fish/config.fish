@@ -12,6 +12,7 @@ fzf --fish | source
 mise activate fish | source
 
 set EDITOR nvim
+set VISUAL zed
 set XDG_CONFIG_HOME "$HOME/.config"
 set fish_greeting ""
 set HOMEBREW_NO_ENV_HINTS 1

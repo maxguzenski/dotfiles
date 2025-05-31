@@ -52,7 +52,6 @@ brew install \
   iterm2 \
   notion \
   notunes \
-  postgres-unofficial \
   raycast \
   rectangle \
   spotify \
@@ -67,8 +66,10 @@ brew install \
 # fi
 
 stow fish
+stow bat
 stow bin
 stow starship
+stow lazygit
 stow lazyvim
 stow zed
 stow yazi
