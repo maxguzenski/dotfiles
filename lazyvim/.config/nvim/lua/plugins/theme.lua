@@ -1,4 +1,5 @@
 return {
+  { "EdenEast/nightfox.nvim" },
   {
     "folke/tokyonight.nvim",
     priority = 1000,
