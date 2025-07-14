@@ -1,15 +1,15 @@
-theme = tokyonight_moon
+theme = tokyonight-storm
 #theme = catppuccin-mocha
+
 #window-theme = ghostty
 macos-titlebar-style = tabs
 
-font-family = "JetBrainsMono Nerd Font Mono"
-#font-family = "FiraCode Nerd Font Mono"
-
+font-family = "JetBrainsMono Nerd Font"
 font-size = 15
-adjust-cell-height=15%
+adjust-cell-height=2
+font-thicken=true
 
-background-opacity = 0.95
+background-opacity = 0.98
 
 keybind = ctrl+a>d=toggle_window_decorations
 keybind = ctrl+a>g=toggle_quick_terminal

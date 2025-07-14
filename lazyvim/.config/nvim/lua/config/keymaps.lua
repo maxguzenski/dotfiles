@@ -22,6 +22,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- delete single character without copying into register
 vim.keymap.set("n", "x", [["_x]])
 
+vim.keymap.set("n", "<leader>ghP", ":Gitsigns preview_hunk<CR>", { desc = "Preview Hunk" })
 -- wicth buffer
 -- vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 -- vim.keymap.set("n", "<S-l>", ":bnext<CR>")
