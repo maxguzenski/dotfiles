@@ -17,13 +17,11 @@ brew install \
   fd \
   fish \
   fzf \
+  gemini-cli \
   gh \
   git \
-  git-delta \
-  helix \
   lazydocker \
   lazygit \
-  lazyvim \
   luarocks \
   mise \
   neovim \
@@ -58,6 +56,7 @@ brew install \
   visual-studio-code \
   vlc \
   whatsapp \
+  sst/tap/opencode \
   zed
 
 # if [[ -f ~/.zshrc ]]; then
@@ -66,12 +65,13 @@ brew install \
 # fi
 
 stow fish
+stow starship
 stow bat
 stow bin
-stow starship
 stow lazygit
 stow lazyvim
-stow zed
 stow yazi
+stow zed
+stow ghostty
 
 # source ~/.zshrc

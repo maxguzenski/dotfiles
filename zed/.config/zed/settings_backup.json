@@ -14,23 +14,22 @@
     },
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-latest"
+      "model": "claude-3-7-sonnet-latest"
     },
     "model_parameters": [],
-    "default_profile": "ask"
+    "default_profile": "ask",
+    "version": "2"
   },
 
   "show_edit_predictions": false,
 
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "icon_theme": "Catppuccin Mocha",
   "tab_size": 2,
   "ui_font_size": 15,
   "terminal": { "font_size": 14 },
   "buffer_font_size": 15,
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_line_height": { "custom": 1.45 },
-
-  "current_line_highlight": "gutter",
+  "buffer_line_height": { "custom": 1.5 },
 
   "vim_mode": false,
   "show_completions_on_input": true,
@@ -64,7 +63,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Tokyo Night Storm"
+    "dark": "Catppuccin Macchiato"
   },
 
   "languages": {
@@ -88,6 +87,6 @@
   // "experimental.theme_overrides": {
   //   "background.appearance": "blurred",
   //   "background": "#00000050",
-  //   "editor.background": "#00000090"
+  //   "editor.background": "#00000050"
   // }
 }

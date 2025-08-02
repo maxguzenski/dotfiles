@@ -1,5 +1,7 @@
 
-# format = '$all'
+# format = '  $all'
+# add_newline = true
+# format = " $directory\n $character"
 
 [aws]
 disabled = true

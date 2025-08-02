@@ -6,10 +6,11 @@ macos-titlebar-style = tabs
 
 font-family = "JetBrainsMono Nerd Font"
 font-size = 15
-adjust-cell-height=2
 font-thicken=true
+adjust-cell-height=2
 
 background-opacity = 0.98
+window-padding-x = 8,2
 
 keybind = ctrl+a>d=toggle_window_decorations
-keybind = ctrl+a>g=toggle_quick_terminal
+keybind = cmd+s=text:\x13

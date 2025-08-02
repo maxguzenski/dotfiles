@@ -3,16 +3,13 @@
 -- Add any additional autocmds here
 
 -- OrganizeImports on save
-vim.api.nvim_create_autocmd("BufWritePre", {
-  group = vim.api.nvim_create_augroup("TS_add_missing_imports", { clear = true }),
-  pattern = { "*.ts", "*.js", "*.svelte", "*.svelte.js", "*.jsx" },
-  callback = function()
-    -- vim.lsp.buf.code_action({ apply = true, context = { only = { "source.addMissingImports.ts" }, diagnostics = {} } })
-    -- vim.lsp.buf.code_action({ apply = true, context = { only = { "source.removeUnused.ts" }, diagnostics = {} } })
-    -- vim.lsp.buf.code_action({ apply = true, context = { only = { "source.addMissingImports" }, diagnostics = {} } })
-    vim.lsp.buf.code_action({ apply = true, context = { only = { "source.organizeImports" }, diagnostics = {} } })
-  end,
-})
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+--   group = vim.api.nvim_create_augroup("LspOrganizeImports", { clear = true }),
+--   pattern = "*.js,*.jsx,*.ts,*.tsx,*.svelte,*.svelte.js", -- Apply to relevant file types
+--   callback = function()
+--     vim.lsp.buf.code_action({ apply = true, context = { only = { "source.organizeImports" }, diagnostics = {} } })
+--   end,
+-- })
 
 -- disable spellcheck
 -- use "set spell" to enable
@@ -28,7 +25,14 @@ end
 
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = setup_indent_colors,
-  pattern = "catppuccin-macchiato",
+  pattern = "*",
 })
 
 setup_indent_colors()
+
+--
+-- other
+--
+vim.filetype.add({
+  extension = { svx = "markdown" },
+})

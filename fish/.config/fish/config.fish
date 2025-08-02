@@ -18,6 +18,7 @@ set fish_greeting ""
 set HOMEBREW_NO_ENV_HINTS 1
 
 alias cd="z"
+alias ..="cd .."
 alias c="clear"
 
 alias ls="eza --icons=always --group-directories-first"
@@ -25,6 +26,7 @@ alias ll="ls -lh"
 alias la="ls -lah"
 alias lt="ls -ha -TI .git"
 
+alias cat="bat"
 # alias ianvim="ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY nvim"
 alias vim="nvim"
 alias v="nvim"
