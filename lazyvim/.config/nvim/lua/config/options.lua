@@ -16,5 +16,5 @@ vim.opt.wrap = false
 -- vim.opt.pumblend = 10 -- for cmp menu
 -- vim.opt.winblend = 0 -- for documentation popup
 
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 -- vim.opt.signcolumn = "yes:2"

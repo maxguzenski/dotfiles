@@ -1,27 +1,14 @@
 @import "../omarchy/current/theme/waybar.css";
 
 * {
-  background-color: transparent;
+  background-color: @background;
   color: @foreground;
 
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 14px;
-}
-
-#waybar {
-  background-color: transparent;
-}
-
-.modules-left,
-.modules-center,
-.modules-right {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
-  margin: 2px 0px 0px 0px;
-  /* padding: 0px; */
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
 }
 
 .modules-left {
@@ -30,7 +17,6 @@
 
 .modules-right {
   margin-right: 8px;
-  padding-left: 8px;
 }
 
 #workspaces button {
@@ -50,8 +36,8 @@
 #network,
 #bluetooth,
 #pulseaudio,
-#clock,
-#custom-omarchy {
+#custom-omarchy,
+#custom-update {
   min-width: 12px;
   margin: 0 7.5px;
 }
@@ -61,8 +47,17 @@
 }
 
 tooltip {
-  background-color: @background;
-  background-color: rgba(0, 0, 0, 1);
   padding: 2px;
-  border-radius: 6px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 8.75px;
+}
+
+.hidden {
+  opacity: 0;
 }

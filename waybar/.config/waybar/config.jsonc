@@ -8,12 +8,11 @@
   "modules-center": ["clock", "custom/update"],
   "modules-right": [
     "group/tray-expander",
-    "hyprland/language",
     "bluetooth",
     "network",
     "pulseaudio",
     "cpu",
-    "battery",
+    "battery"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -29,43 +28,39 @@
       "7": "7",
       "8": "8",
       "9": "9",
-      "active": "󱓻",
+      "active": "󱓻"
     },
     "persistent-workspaces": {
       "1": [],
       "2": [],
       "3": [],
       "4": [],
-      "5": [],
-    },
-  },
-  "hyprland/language": {
-    "format": "{}",
-    "format-en": "US",
-    "format-br": "BR",
-    "keyboard-name": "at-translated-set-2-keyboard",
+      "5": []
+    }
   },
   "custom/omarchy": {
-    "format": "",
-    "on-click": "~/.local/share/omarchy/bin/omarchy-menu",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space",
+    "format": "<span font='omarchy'>\ue900</span>",
+    "on-click": "omarchy-menu",
+    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
   "custom/update": {
     "format": "",
-    "exec": "~/.local/share/omarchy/bin/omarchy-update-available",
-    "on-click": "alacritty --class Omarchy --title Omarchy -e ~/.local/share/omarchy/bin/omarchy-update",
-    "interval": 3600,
+    "exec": "omarchy-update-available",
+    "on-click": "alacritty --class Omarchy --title Omarchy -e omarchy-update",
+    "tooltip-format": "Omarchy update available",
+    "interval": 3600
   },
+
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "alacritty -e btop",
+    "on-click": "alacritty -e btop"
   },
   "clock": {
     "format": "{:%A %H:%M}",
     "format-alt": "{:%d %B W%V %Y}",
     "tooltip": false,
-    "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate",
+    "on-click-right": "omarchy-cmd-tzupdate"
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -78,7 +73,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "nospacing": 1,
-    "on-click": "alacritty --class=Impala -e impala",
+    "on-click": "alacritty --class=Impala -e impala"
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -87,7 +82,7 @@
     "format-plugged": "",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "format-full": "󰂅",
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
@@ -95,15 +90,15 @@
     "interval": 5,
     "states": {
       "warning": 20,
-      "critical": 10,
-    },
+      "critical": 10
+    }
   },
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
     "format-connected": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "alacritty --class=Impala -e bluetui",
+    "on-click": "blueberry"
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -113,23 +108,23 @@
     "scroll-step": 5,
     "format-muted": "󰝟",
     "format-icons": {
-      "default": ["", "", ""],
-    },
+      "default": ["", "", ""]
+    }
   },
   "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 250,
-      "children-class": "tray-group-item",
+      "transition-duration": 600,
+      "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"],
+    "modules": ["custom/expand-icon", "tray"]
   },
   "custom/expand-icon": {
     "format": " ",
-    "tooltip": false,
+    "tooltip": false
   },
   "tray": {
     "icon-size": 12,
-    "spacing": 12,
-  },
+    "spacing": 12
+  }
 }
