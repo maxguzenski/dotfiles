@@ -2,7 +2,7 @@ return {
   "saghen/blink.cmp",
   opts = {
     keymap = {
-      preset = "default",
+      preset = "super-tab",
       -- preset = "enter",
       --
       -- ["<Tab>"] = { "select_next", "fallback" },
@@ -15,8 +15,5 @@ return {
       list = { selection = { preselect = false, auto_insert = false } },
       ghost_text = { enabled = false },
     },
-    -- sources = {
-    --   default = { "lsp", "codecompanion", "path", "snippets", "buffer" },
-    -- },
   }, -- default, super-tab
 }
