@@ -10,9 +10,9 @@ return {
       },
       layout = {
         preview = true,
-        preset = function()
-          return vim.o.columns >= 200 and "default" or "myvertical"
-        end,
+        -- preset = function()
+        --   return vim.o.columns >= 200 and "default" or "myvertical"
+        -- end,
       },
       layouts = {
         default = {},
