@@ -1,14 +1,14 @@
-theme = tokyonight-storm
+theme = TokyoNight Storm
 #theme = catppuccin-mocha
 
 window-theme = ghostty
-# macos-titlebar-style = tabs
+macos-titlebar-style = tabs
 
 # font-family = ""
 font-family = "JetBrainsMono Nerd Font Mono"
 # font-family = "JetBrainsMono Nerd Font Mono"
-font-size = 12
-font-thicken = false
+font-size = 15
+font-thicken = true
 adjust-cell-height=2
 
 background-opacity = 0.98
@@ -16,4 +16,4 @@ window-padding-x = 8,2
 
 keybind = f10=toggle_window_decorations
 keybind = f11=toggle_fullscreen
-# keybind = cmd+s=text:\x13
+keybind = cmd+s=text:\x13
