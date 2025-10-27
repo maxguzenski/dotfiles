@@ -14,5 +14,4 @@ mise use -g node@24
 pacman -Sy \
   stow \
   zellij \
-  ast-grep \
-  firefox
+  ast-grep
