@@ -5,6 +5,9 @@
 vim.g.snacks_animate = false
 vim.opt.list = false
 
+-- setted at autocmds
+-- vim.opt.cursorline = false
+
 -- vim.opt.tabstop = 4
 -- vim.opt.softtabstop = 4
 -- vim.opt.shiftwidth = 4

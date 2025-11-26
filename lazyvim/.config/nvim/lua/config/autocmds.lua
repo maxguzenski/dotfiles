@@ -19,6 +19,7 @@ vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 -- Fix indent line using Snacks.vim
 --
 local function setup_indent_colors()
+  vim.opt.cursorline = false
   vim.api.nvim_set_hl(0, "SnacksIndent", { fg = "#2d324a" })
   vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = "#3b4261" })
 end
