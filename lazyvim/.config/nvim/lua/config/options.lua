@@ -21,3 +21,5 @@ vim.opt.wrap = false
 
 vim.opt.cursorline = true
 -- vim.opt.signcolumn = "yes:2"
+
+-- vim.cmd.colorscheme("catppuccin")

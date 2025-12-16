@@ -1,2 +1,5 @@
-[opener]
-edit = [{ run = 'nvim "$@"', block = true }]
+# [opener]
+# edit = [{ run = 'nvim "$@"', block = true }]
+
+[task]
+image_bound = [6000,6000]
