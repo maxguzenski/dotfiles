@@ -8,13 +8,24 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = { "*.js", "*.jsx", "*.ts", "*.tsx", "*.svelte" },
   callback = function(ev)
     local clients = vim.lsp.get_clients({ bufnr = ev.buf })
+
     for _, client in ipairs(clients) do
       if client.supports_method("textDocument/codeAction") then
-        local params = vim.lsp.util.make_range_params()
-        params.context = { only = { "source.organizeImports" }, diagnostics = {} }
+        -- CORRETO: winid = 0, não bufnr
+        local params = vim.lsp.util.make_range_params(0, client.offset_encoding)
 
-        local result = vim.lsp.buf_request_sync(ev.buf, "textDocument/codeAction", params, 1000)
-        for _, res in pairs(result or {}) do
+        params.context = {
+          only = { "source.organizeImports" },
+          diagnostics = {},
+        }
+
+        local results = vim.lsp.buf_request_sync(ev.buf, "textDocument/codeAction", params, 1000)
+
+        if not results then
+          return
+        end
+
+        for _, res in pairs(results) do
           for _, action in pairs(res.result or {}) do
             if action.edit then
               vim.lsp.util.apply_workspace_edit(action.edit, client.offset_encoding)
@@ -23,6 +34,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
             end
           end
         end
+
+        -- roda apenas uma vez
+        return
       end
     end
   end,

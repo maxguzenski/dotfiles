@@ -4,8 +4,8 @@
 
 -- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
--- vim.keymap.set("i", "<C-S-h>", "<C-o>b", { desc = "Jumps words backforward" })
--- vim.keymap.set("i", "<C-S-l>", "<C-o>w", { desc = "Jumps words forward" })
+vim.keymap.set("n", "<leader>F", LazyVim.pick("files", { root = false }), { desc = "Find Files (cwd)" })
+
 vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
 vim.keymap.set("i", "fd", "<Esc>:w<Enter>", { noremap = false })
 
