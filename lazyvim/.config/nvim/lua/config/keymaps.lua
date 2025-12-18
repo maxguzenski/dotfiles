@@ -7,7 +7,7 @@
 vim.keymap.set("n", "<leader>F", LazyVim.pick("files", { root = false }), { desc = "Find Files (cwd)" })
 
 vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
-vim.keymap.set("i", "fd", "<Esc>:w<Enter>", { noremap = false })
+-- vim.keymap.set("i", "fd", "<Esc>:w<Enter>", { noremap = false })
 
 -- vertical scroll and center
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
