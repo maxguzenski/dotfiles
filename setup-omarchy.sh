@@ -6,12 +6,15 @@ yay -Rns \
   signal-desktop
 
 omarchy-webapp-remove HEY
+omarchy-webapp-remove Discord
 omarchy-webapp-remove Basecamp
-omarchy-webapp-remove "Google contacts"
+omarchy-webapp-remove Fizzy
+omarchy-webapp-remove "Google Contacts"
+omarchy-webapp-remove "Google Messages"
 
-mise use -g node@24
+# mise use -g node@24
 
-pacman -Sy \
+sudo pacman -Sy \
   stow \
   zellij \
   ast-grep \
@@ -20,14 +23,14 @@ pacman -Sy \
   gnome-tweaks \
   kitty \
   vulkan-radeon \
-  mangohub \
+  mangohud \
   gamescope \
   steam \
   yazi \
-  tree-sitter-cli
+  tree-sitter-cli \
+  zed
 
 yay -S \
-  --noconfirm \
   --needed \
   --answerdiff None \
   --answerclean None \
