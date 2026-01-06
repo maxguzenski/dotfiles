@@ -1,14 +1,14 @@
 [[plugin.deps]]
 use = "KKV9/compress"
-rev = "c264639"
-hash = "e17c11b605d989568a1d1741ca17c584"
+rev = "f9208fe"
+hash = "45791332b981cefd629e31c8bc1df4dd"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "5e0e49e"
+rev = "9276ffa"
 hash = "9b9a8e91898a73c1211788a4ed30336"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "5e0e49e"
+rev = "9276ffa"
 hash = "8d7799e4598ff079fa5ee5c770d9bc08"

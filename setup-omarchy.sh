@@ -12,7 +12,10 @@ omarchy-webapp-remove Fizzy
 omarchy-webapp-remove "Google Contacts"
 omarchy-webapp-remove "Google Messages"
 
-# mise use -g node@24
+omarchy-webapp-install "Twitch" "https://twitch.tv" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/twitch.png"
+omarchy-webapp-install "Notion" "https://www.notion.so/" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/notion-light.png"
+omarchy-webapp-install "Google Sheets" "https://docs.google.com/spreadsheets/u/0/" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-sheets.png"
+omarchy-webapp-install "Gmail" "https://gmail.com" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/gmail.png"
 
 sudo pacman -Sy \
   stow \
@@ -28,6 +31,7 @@ sudo pacman -Sy \
   steam \
   yazi \
   tree-sitter-cli \
+  jujutsu \
   zed
 
 yay -S \
@@ -36,4 +40,10 @@ yay -S \
   --answerclean None \
   brave-bin \
   yaak-bin \
-  github-desktop-bin
+  github-desktop-bin \
+  opencode
+
+echo "source ~/dotfiles/bashrc" >>~/.bashrc
+
+stow yazi
+stow zed
