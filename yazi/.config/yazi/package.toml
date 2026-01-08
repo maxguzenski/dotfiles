@@ -1,7 +1,17 @@
 [[plugin.deps]]
 use = "KKV9/compress"
-rev = "f9208fe"
-hash = "45791332b981cefd629e31c8bc1df4dd"
+rev = "c9c16d8"
+hash = "a68bde26a61da040131aa95069f638c2"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:piper"
+rev = "4e55902"
+hash = "2dd68af59418b631b9703a03f606b31f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "4e55902"
+hash = "8a7c58225816a163a6e8730c0adafbc8"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
