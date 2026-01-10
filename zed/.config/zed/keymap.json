@@ -9,20 +9,13 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-shift-cmd-v": "workspace::ToggleVimMode"
-    }
+      // "shift shift": "file_finder::Toggle"
+    },
   },
   {
-    "context": "Editor",
+    "context": "Editor && vim_mode == insert",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-    }
-  }
-  // ,
-  // {
-  //   "context": "vim_mode == insert",
-  //   "bindings": {
-  //     "j k": "vim::NormalBefore"
-  //   }
-  // }
+      // "j k": "vim::NormalBefore"
+    },
+  },
 ]
