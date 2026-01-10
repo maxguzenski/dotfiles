@@ -5,3 +5,6 @@ zed/.config/zed/prompts/
 zed/.config/zed/embeddings/
 backgrounds/sexy*.*
 hypr/.config/hypr/shaders
+
+yazi/.config/yazi/package.yml
+yazi/.config/yazi/plugins/**
