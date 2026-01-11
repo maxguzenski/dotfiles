@@ -40,8 +40,7 @@ yay -S \
   --answerclean None \
   brave-bin \
   yaak-bin \
-  github-desktop-bin \
-  opencode
+  github-desktop-bin
 
 echo "source ~/dotfiles/bashrc" >>~/.bashrc
 

@@ -89,11 +89,11 @@
   "relative_line_numbers": "disabled",
   "show_wrap_guides": true,
   "current_line_highlight": "gutter",
-  "agent_ui_font_size": 16.0,
+  "agent_ui_font_size": 15.0,
   "buffer_font_weight": 500.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": { "calt": true, "liga": true },
-  "ui_font_size": 16.0,
-  "buffer_font_size": 15.0,
+  "ui_font_size": 15.0,
+  "buffer_font_size": 14.0,
   "theme": "Catppuccin Macchiato"
 }
