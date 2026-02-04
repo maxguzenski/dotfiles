@@ -4,15 +4,16 @@ custom-shader = shaders/cursor_warp.glsl
 
 # Font
 font-family = "JetBrainsMono Nerd Font"
-font-style = "regular"
-font-size = 11.5
+font-style = "medium"
+font-size = 11
 # font-thicken = true
 
 # Window
 adjust-cell-height = 10%
+adjust-cell-width = -1
 window-padding-balance = true
-window-padding-x = 14
-window-padding-y = 14
+window-padding-x = 12
+window-padding-y = 12
 confirm-close-surface=false
 resize-overlay = never
 
@@ -30,9 +31,9 @@ keybind = super+control+shift+alt+arrow_up=resize_split:up,100
 keybind = super+control+shift+alt+arrow_left=resize_split:left,100
 keybind = super+control+shift+alt+arrow_right=resize_split:right,100
 
-keybind = control+equal=increase_font_size:0.5
-keybind = control++=increase_font_size:0.5
-keybind = control+-=decrease_font_size:0.5
+keybind = control+equal=increase_font_size:0.1
+keybind = control++=increase_font_size:0.1
+keybind = control+-=decrease_font_size:0.1
 
 # Slowdown mouse scrolling
 mouse-scroll-multiplier = 0.95
