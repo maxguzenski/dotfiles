@@ -94,6 +94,6 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": { "calt": true, "liga": true },
   "ui_font_size": 15.0,
-  "buffer_font_size": 14.0,
+  "buffer_font_size": 15.0,
   "theme": "Catppuccin Macchiato"
 }

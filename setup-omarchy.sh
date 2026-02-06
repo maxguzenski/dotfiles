@@ -31,7 +31,6 @@ sudo pacman -Sy \
   steam \
   yazi \
   tree-sitter-cli \
-  jujutsu \
   zed
 
 yay -S \
@@ -44,5 +43,9 @@ yay -S \
 
 echo "source ~/dotfiles/bashrc" >>~/.bashrc
 
+stow bin
+stow ghostty
+stow kitty
 stow yazi
 stow zed
+stow hypr

@@ -17,7 +17,6 @@ brew install \
   fd \
   fish \
   fzf \
-  gemini-cli \
   gh \
   git \
   lazydocker \
@@ -40,7 +39,6 @@ brew install \
   1password \
   brave-browser \
   chatgpt \
-  cursor \
   firefox \
   font-fira-code-nerd-font \
   font-jetbrains-mono-nerd-font \
