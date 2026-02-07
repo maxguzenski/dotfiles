@@ -44,8 +44,14 @@ yay -S \
 echo "source ~/dotfiles/bashrc" >>~/.bashrc
 
 stow bin
-stow ghostty
-stow kitty
-stow yazi
-stow zed
-stow hypr
+
+# Backup existing config directories and stow dotfiles
+configs=("ghostty" "kitty" "yazi" "zed" "hypr" "nvim")
+
+for config in "${configs[@]}"; do
+  if [ -d ~/.config/$config ]; then
+    mv ~/.config/$config ~/.config/$config.bkp
+  fi
+
+  stow $config
+done
