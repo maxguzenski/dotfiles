@@ -1,5 +1,13 @@
 #!/bin/bash
 
+DEVICE="${1}"
+
+if [ -z "$DEVICE" ] || { [ "$DEVICE" != "desktop" ] && [ "$DEVICE" != "zenbook" ]; }; then
+  echo "Usage: $0 <device>"
+  echo "  device must be 'desktop' or 'zenbook'"
+  exit 1
+fi
+
 yay -Rns \
   kdenlive \
   obs-studio \
@@ -50,7 +58,7 @@ stow bin
 # set custom device config
 #
 rm ./hypr/.config/hypr/current.conf || true
-ln -s ./hypr/.config/hypr/custom/desktop.conf ./hypr/.config/hypr/current.conf
+ln -s ./hypr/.config/hypr/custom/${DEVICE}.conf ./hypr/.config/hypr/current.conf
 
 #
 # Backup existing config directories and stow dotfiles
