@@ -44,11 +44,18 @@ yay -S \
   github-desktop-bin
 
 echo "source ~/dotfiles/bashrc" >>~/.bashrc
-
 stow bin
 
+#
+# set custom device config
+#
+rm ./hypr/.config/hypr/current.conf || true
+ln -s ./hypr/.config/hypr/custom/desktop.conf ./hypr/.config/hypr/current.conf
+
+#
 # Backup existing config directories and stow dotfiles
-configs=("ghostty" "kitty" "yazi" "zed" "hypr")
+#
+configs=("ghostty" "kitty" "yazi" "zed" "hypr", "tmux")
 
 for config in "${configs[@]}"; do
   if [ -d ~/.config/$config ]; then
@@ -58,4 +65,5 @@ for config in "${configs[@]}"; do
   stow $config
 done
 
+# others
 ./switch-nvim.sh lazyvim
