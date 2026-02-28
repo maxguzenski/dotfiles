@@ -25,7 +25,6 @@ brew install \
   mise \
   neovim \
   posting \
-  rclone \
   ripgrep \
   starship \
   stow \
@@ -48,7 +47,6 @@ brew install \
   iterm2 \
   notion \
   notunes \
-  raycast \
   rectangle \
   spotify \
   visual-studio-code \
