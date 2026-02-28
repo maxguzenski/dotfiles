@@ -14,8 +14,9 @@ omarchy-webapp-remove "Google Messages"
 
 omarchy-webapp-install "Twitch" "https://twitch.tv" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/twitch.png"
 omarchy-webapp-install "Notion" "https://www.notion.so/" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/notion-light.png"
-omarchy-webapp-install "Google Sheets" "https://docs.google.com/spreadsheets/u/0/" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-sheets.png"
 omarchy-webapp-install "Gmail" "https://gmail.com" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/gmail.png"
+omarchy-webapp-install "Google Sheets" "https://docs.google.com/spreadsheets/u/0/" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-sheets.png"
+omarchy-webapp-install "Google Calendar" "https://calendar.google.com/calendar/u/0/r" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-calendar.png"
 
 sudo pacman -Sy \
   stow \
@@ -28,6 +29,7 @@ sudo pacman -Sy \
   vulkan-radeon \
   mangohud \
   gamescope \
+  gamemode \
   steam \
   yazi \
   tree-sitter-cli \
@@ -46,7 +48,7 @@ echo "source ~/dotfiles/bashrc" >>~/.bashrc
 stow bin
 
 # Backup existing config directories and stow dotfiles
-configs=("ghostty" "kitty" "yazi" "zed" "hypr" "nvim")
+configs=("ghostty" "kitty" "yazi" "zed" "hypr")
 
 for config in "${configs[@]}"; do
   if [ -d ~/.config/$config ]; then
@@ -55,3 +57,5 @@ for config in "${configs[@]}"; do
 
   stow $config
 done
+
+./switch-nvim.sh lazyvim
