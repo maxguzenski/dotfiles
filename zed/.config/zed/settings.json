@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    }
+  },
   "collaboration_panel": {
     "button": false
   },
@@ -29,7 +34,7 @@
     "button": true,
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-5-latest"
+      "model": "claude-sonnet-4-6-latest"
     },
     "model_parameters": []
   },
@@ -98,6 +103,6 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": { "calt": true, "liga": true },
   "ui_font_size": 15.0,
-  "buffer_font_size": 15.0,
+  "buffer_font_size": 14.0,
   "theme": "Catppuccin Macchiato"
 }
