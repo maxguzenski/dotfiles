@@ -2,19 +2,13 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-
 vim.keymap.set("n", "<leader>F", LazyVim.pick("files", { root = false }), { desc = "Find Files (cwd)" })
 
 vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
--- vim.keymap.set("i", "fd", "<Esc>:w<Enter>", { noremap = false })
 
 -- vertical scroll and center
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
-
--- select all buffer
--- vim.keymap.set("n", "<C-a>", "ggVG")
 
 -- greatest remap ever
 -- cola sem sobrescrever o registro
@@ -24,6 +18,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "x", [["_x]])
 
 vim.keymap.set("n", "<leader>ghP", ":Gitsigns preview_hunk<CR>", { desc = "Preview Hunk" })
+vim.keymap.set("n", "<leader>r", ":w<CR>", { desc = "Save current file" })
 -- wicth buffer
 -- vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 -- vim.keymap.set("n", "<S-l>", ":bnext<CR>")
