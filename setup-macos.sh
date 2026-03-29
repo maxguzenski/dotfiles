@@ -10,7 +10,6 @@
 
 brew install \
   ast-grep \
-  awscli \
   bat \
   eza \
   fastfetch \
@@ -24,35 +23,28 @@ brew install \
   luarocks \
   mise \
   neovim \
-  posting \
   ripgrep \
   starship \
   stow \
   tree-sitter \
   wget \
-  xh \
   zellij \
-  zoxide
+  zoxide \
+  yazi
 
 brew install \
   1password \
   brave-browser \
   chatgpt \
-  firefox \
   font-fira-code-nerd-font \
   font-jetbrains-mono-nerd-font \
   ghostty \
-  github \
   google-chrome \
   iterm2 \
   notion \
   notunes \
   rectangle \
-  spotify \
-  visual-studio-code \
   vlc \
-  whatsapp \
-  sst/tap/opencode \
   zed
 
 # if [[ -f ~/.zshrc ]]; then
@@ -62,7 +54,7 @@ brew install \
 
 stow fish
 stow starship
-stow bat
+# stow bat
 stow bin
 stow lazygit
 stow lazyvim
