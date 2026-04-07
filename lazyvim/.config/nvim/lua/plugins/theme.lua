@@ -8,7 +8,7 @@ return {
 
   {
     "LazyVim/LazyVim",
-    opts = { colorscheme = "catppuccin" },
+    opts = { colorscheme = "catppuccin-nvim" },
   },
   -- {
   --   "ribru17/bamboo.nvim",
