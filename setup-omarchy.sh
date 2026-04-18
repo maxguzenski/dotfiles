@@ -33,7 +33,6 @@ sudo pacman -Sy \
   xh \
   luarocks \
   gnome-tweaks \
-  kitty \
   vulkan-radeon \
   mangohud \
   gamescope \
@@ -41,7 +40,8 @@ sudo pacman -Sy \
   steam \
   yazi \
   tree-sitter-cli \
-  zed
+  zed \
+  gsu
 
 yay -S \
   --needed \
