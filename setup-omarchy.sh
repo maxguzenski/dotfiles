@@ -52,25 +52,22 @@ yay -S \
   github-desktop-bin
 
 echo "source ~/dotfiles/bashrc" >>~/.bashrc
-stow bin
-
-#
-# set custom device config
-#
-rm ./hypr/.config/hypr/current.conf || true
-ln -s ./hypr/.config/hypr/custom/${DEVICE}.conf ./hypr/.config/hypr/current.conf
 
 #
 # Backup existing config directories and stow dotfiles
 #
 configs=("ghostty" "kitty" "yazi" "zed" "hypr", "tmux")
-
 for config in "${configs[@]}"; do
   if [ -d ~/.config/$config ]; then
-    mv ~/.config/$config ~/.config/$config.bkp
+    mv ~/.config/$config "~/.config/$config.bkp_$(date +%Y%m%d%H%M%S)"
   fi
 
-  stow $config
+  ln -sf ~/dotfiles/${config} ~/.config/${config}
+done
+
+config=("hypr")
+for config in "${configs[@]}"; do
+  ln -sf ~/.config/${config}/custom/${DEVICE}.conf ~/.config/${config}/current.conf
 done
 
 # others

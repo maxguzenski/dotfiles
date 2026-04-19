@@ -1,4 +1,4 @@
-export PATH="/home/max/.local/bin:$PATH"
+export PATH="~/dotfiles/bin:$PATH"
 
 alias v='nvim'
 alias c='clear'
