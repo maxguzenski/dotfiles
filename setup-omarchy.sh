@@ -56,7 +56,7 @@ echo "source ~/dotfiles/bashrc" >>~/.bashrc
 #
 # Backup existing config directories and stow dotfiles
 #
-configs=("ghostty" "kitty" "yazi" "zed" "hypr", "tmux")
+configs=("ghostty" "kitty" "yazi" "zed" "hypr" "tmux")
 for config in "${configs[@]}"; do
   if [ -d ~/.config/$config ]; then
     mv ~/.config/$config "~/.config/$config.bkp_$(date +%Y%m%d%H%M%S)"
