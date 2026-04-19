@@ -1,12 +1,13 @@
 .DS_Store
-lazyvim/.config/nvim/lazy-lock.json
-lazyvim/.config/nvim/lazyvim.json
-zed/.config/zed/prompts/
-zed/.config/zed/embeddings/
+lazyvim/lazy-lock.json
+lazyvim/lazyvim.json
+zed/prompts/
+zed/embeddings/
 backgrounds/sexy*.*
-hypr/.config/hypr/shaders
+hypr/shaders
 
-yazi/.config/yazi/package.yml
-yazi/.config/yazi/plugins/**
-/hypr/.config/hypr/current.conf
-/ghostty/current.conf
+yazi/package.yml
+yazi/plugins/**
+
+hypr/current.conf
+ghostty/current.conf
