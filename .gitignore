@@ -1,9 +1,10 @@
 .DS_Store
+backgrounds/sexy*.*
+
 lazyvim/lazy-lock.json
 lazyvim/lazyvim.json
 zed/prompts/
 zed/embeddings/
-backgrounds/sexy*.*
 hypr/shaders
 
 yazi/package.yml
