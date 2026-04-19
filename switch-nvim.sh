@@ -6,5 +6,4 @@ rm -Rf ~/.local/state/nvim
 rm -Rf ~/.local/share/nvim
 rm -Rf ~/.cache/nvim
 
-stow $1
 ln -sf ~/dotfiles/$1 ~/.config/nvim
