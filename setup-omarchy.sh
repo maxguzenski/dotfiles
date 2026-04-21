@@ -27,8 +27,6 @@ omarchy-webapp-install "Google Sheets" "https://docs.google.com/spreadsheets/u/0
 omarchy-webapp-install "Google Calendar" "https://calendar.google.com/calendar/u/0/r" "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-calendar.png"
 
 sudo pacman -Sy \
-  stow \
-  zellij \
   ast-grep \
   xh \
   luarocks \

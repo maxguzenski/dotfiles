@@ -27,7 +27,6 @@ alias la="ls -lah"
 alias lt="ls -ha -TI .git"
 
 alias cat="bat"
-# alias ianvim="ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY nvim"
 alias vim="nvim"
 alias v="nvim"
 

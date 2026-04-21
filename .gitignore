@@ -5,10 +5,27 @@ lazyvim/lazy-lock.json
 lazyvim/lazyvim.json
 zed/prompts/
 zed/embeddings/
-hypr/shaders
+#hypr/shaders
 
 yazi/package.yml
 yazi/plugins/**
 
 hypr/current.conf
 ghostty/current.conf
+
+# defensive: never commit credentials or private keys
+*.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*credentials*
+*secret*
+.netrc
+.envrc
+.aws/
+.ssh/
