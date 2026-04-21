@@ -5,7 +5,7 @@ lazyvim/lazy-lock.json
 lazyvim/lazyvim.json
 zed/prompts/
 zed/embeddings/
-#hypr/shaders
+hypr/shaders
 
 yazi/package.yml
 yazi/plugins/**
