@@ -3,6 +3,12 @@
 // Example:
 [
   {
+    "label": "lazygit",
+    "command": "lazygit",
+    "shell": "system",
+    "reveal_target": "center",
+  },
+  {
     "label": "Example task",
     "command": "for i in {1..5}; do echo \"Hello $i/5\"; sleep 1; done",
     //"args": [],
