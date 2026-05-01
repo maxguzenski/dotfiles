@@ -2,7 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set("n", "<leader><space>", LazyVim.pick("files", { root = true }), { desc = "Find Files" })
+vim.keymap.set("n", "<leader><space>", LazyVim.pick("files", { root = false }), { desc = "Find Files" })
 
 vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
 
