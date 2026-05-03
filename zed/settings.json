@@ -7,6 +7,33 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "autosave": "on_focus_change",
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "scrollbar": {
+    "git_diff": true
+  },
+  "gutter": {
+    "min_line_number_digits": 4
+  },
+  "colorize_brackets": false,
+  "snippet_sort_order": "inline",
+  "show_signature_help_after_edits": true,
+  "scroll_beyond_last_line": "one_page",
+  "vertical_scroll_margin": 3.0,
+  "which_key": {
+    "enabled": true,
+  },
+  "preview_tabs": {
+    "enabled": true,
+  },
+  "debugger": {
+    "button": false,
+  },
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
   "diff_view_style": "unified",
   "context_servers": {
     "mcp-server-context7": {
@@ -19,12 +46,23 @@
   },
   "agent_buffer_font_size": 14.0,
   "outline_panel": {
-    "dock": "left",
+    "dock": "right",
   },
   "git_panel": {
-    "dock": "left",
+    "show_count_badge": true,
+    "diff_stats": true,
+    "folder_icons": true,
+    "file_icons": true,
+    "tree_view": false,
+    "sort_by_path": false,
+    "status_style": "icon",
+    "default_width": 360.0,
+    "dock": "right",
   },
   "agent_servers": {
+    "pi-acp": {
+      "type": "registry",
+    },
     "claude-acp": {
       "type": "registry",
     },
@@ -58,7 +96,7 @@
     "light": "Zed (Default)",
     "dark": "Zed (Default)",
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "agent": {
     "dock": "left",
     "inline_assistant_model": {
@@ -67,14 +105,16 @@
     },
     "button": true,
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-sonnet-4-6-latest",
+      "provider": "opencode",
+      "model": "gpt-5.4",
     },
     "model_parameters": [],
   },
   "ui_font_family": "Inter Variable",
   "ui_font_weight": 400.0,
   "git": {
+    "enable_status": true,
+    "enable_diff": true,
     "path_style": "file_name_first",
     "branch_picker": {
       "show_author_name": true,
@@ -87,11 +127,18 @@
       "enabled": false,
     },
   },
-  "buffer_line_height": "comfortable",
+  "buffer_line_height": {
+    "custom": 1.5
+  },
   "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": true,
     "show": true,
   },
   "title_bar": {
+    "button_layout": "platform_default",
+    "show_branch_status_icon": false,
     "show_menus": false,
     "show_onboarding_banner": true,
     "show_project_items": true,
@@ -104,6 +151,22 @@
     "active_language_button": true,
   },
   "project_panel": {
+    "auto_reveal_entries": false,
+    "indent_guides": {
+      "show": "never",
+    },
+    "sticky_scroll": true,
+    "git_status_indicator": false,
+    "diagnostic_badges": false,
+    "scrollbar": {
+      "horizontal_scroll": true,
+      "show": "auto",
+    },
+    "bold_folder_labels": false,
+    "indent_size": 20.0,
+    "git_status": true,
+    "folder_icons": true,
+    "hide_gitignore": false,
     "hide_hidden": false,
     "entry_spacing": "standard",
     "default_width": 230.0,
@@ -117,7 +180,7 @@
     "background_coloring": "disabled",
     "coloring": "fixed",
     "active_line_width": 1,
-    "line_width": 2,
+    "line_width": 1,
   },
   "hard_tabs": false,
   "tab_size": 2,
@@ -131,12 +194,12 @@
   "relative_line_numbers": "disabled",
   "show_wrap_guides": true,
   "current_line_highlight": "gutter",
-  "agent_ui_font_size": 15.0,
-  "buffer_font_weight": 400.0,
+  "agent_ui_font_size": 17.0,
+  "buffer_font_weight": 500.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": { "calt": true, "liga": true },
   "ui_font_size": 15.0,
-  "buffer_font_size": 14.0,
+  "buffer_font_size": 13.0,
   "theme": {
     "mode": "dark",
     "light": "One Light",
