@@ -23,30 +23,22 @@
   "scroll_beyond_last_line": "one_page",
   "vertical_scroll_margin": 3.0,
   "which_key": {
-    "enabled": true,
+    "enabled": true
   },
   "preview_tabs": {
-    "enabled": true,
+    "enabled": true
   },
   "debugger": {
-    "button": false,
+    "button": false
   },
   "vim": {
-    "toggle_relative_line_numbers": true,
+    "toggle_relative_line_numbers": true
   },
   "diff_view_style": "unified",
-  "context_servers": {
-    "mcp-server-context7": {
-      "enabled": true,
-      "remote": false,
-      "settings": {
-        "context7_api_key": "",
-      },
-    },
-  },
+  "context_servers": {},
   "agent_buffer_font_size": 14.0,
   "outline_panel": {
-    "dock": "right",
+    "dock": "right"
   },
   "git_panel": {
     "show_count_badge": true,
@@ -57,14 +49,14 @@
     "sort_by_path": false,
     "status_style": "icon",
     "default_width": 360.0,
-    "dock": "right",
+    "dock": "right"
   },
   "agent_servers": {
     "pi-acp": {
-      "type": "registry",
+      "type": "registry"
     },
     "claude-acp": {
-      "type": "registry",
+      "type": "registry"
     },
     "opencode": {
       "favorite_config_option_values": {
@@ -72,43 +64,43 @@
           "opencode/kimi-k2.6",
           "opencode/glm-5.1",
           "opencode/qwen3.6-plus",
-          "opencode/minimax-m2.7",
-        ],
+          "opencode/minimax-m2.7"
+        ]
       },
-      "type": "registry",
-    },
+      "type": "registry"
+    }
   },
   "collaboration_panel": {
     "dock": "left",
-    "button": false,
+    "button": false
   },
   "active_pane_modifiers": {
-    "border_size": 0.0,
+    "border_size": 0.0
   },
   "bottom_dock_layout": "contained",
   "tabs": {
     "close_position": "right",
     "file_icons": true,
-    "git_status": false,
+    "git_status": false
   },
   "icon_theme": {
     "mode": "dark",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)",
+    "dark": "Zed (Default)"
   },
   "vim_mode": true,
   "agent": {
     "dock": "left",
     "inline_assistant_model": {
       "provider": "anthropic",
-      "model": "claude-haiku-4-5-latest",
+      "model": "claude-haiku-4-5-latest"
     },
     "button": true,
     "default_model": {
       "provider": "opencode",
-      "model": "gpt-5.4",
+      "model": "gpt-5.4"
     },
-    "model_parameters": [],
+    "model_parameters": []
   },
   "ui_font_family": "Inter Variable",
   "ui_font_weight": 400.0,
@@ -117,15 +109,15 @@
     "enable_diff": true,
     "path_style": "file_name_first",
     "branch_picker": {
-      "show_author_name": true,
+      "show_author_name": true
     },
     "blame": {
-      "show_avatar": true,
+      "show_avatar": true
     },
     "inline_blame": {
       "padding": 7,
-      "enabled": false,
-    },
+      "enabled": false
+    }
   },
   "buffer_line_height": {
     "custom": 1.5
@@ -134,7 +126,7 @@
     "show_pinned_tabs_in_separate_row": false,
     "show_tab_bar_buttons": true,
     "show_nav_history_buttons": true,
-    "show": true,
+    "show": true
   },
   "title_bar": {
     "button_layout": "platform_default",
@@ -142,25 +134,25 @@
     "show_menus": false,
     "show_onboarding_banner": true,
     "show_project_items": true,
-    "show_branch_name": true,
+    "show_branch_name": true
   },
   "terminal": {
-    "button": true,
+    "button": true
   },
   "status_bar": {
-    "active_language_button": true,
+    "active_language_button": true
   },
   "project_panel": {
     "auto_reveal_entries": false,
     "indent_guides": {
-      "show": "never",
+      "show": "never"
     },
     "sticky_scroll": true,
     "git_status_indicator": false,
     "diagnostic_badges": false,
     "scrollbar": {
       "horizontal_scroll": true,
-      "show": "auto",
+      "show": "auto"
     },
     "bold_folder_labels": false,
     "indent_size": 20.0,
@@ -171,25 +163,25 @@
     "entry_spacing": "standard",
     "default_width": 230.0,
     "dock": "right",
-    "button": true,
+    "button": true
   },
   "inlay_hints": {
-    "enabled": false,
+    "enabled": false
   },
   "indent_guides": {
     "background_coloring": "disabled",
     "coloring": "fixed",
     "active_line_width": 1,
-    "line_width": 1,
+    "line_width": 1
   },
   "hard_tabs": false,
   "tab_size": 2,
   "toolbar": {
     "quick_actions": true,
-    "breadcrumbs": true,
+    "breadcrumbs": true
   },
   "minimap": {
-    "show": "never",
+    "show": "never"
   },
   "relative_line_numbers": "disabled",
   "show_wrap_guides": true,
@@ -203,6 +195,6 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato",
-  },
+    "dark": "Catppuccin Macchiato"
+  }
 }
