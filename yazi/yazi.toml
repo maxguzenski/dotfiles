@@ -1,8 +1,12 @@
 # [opener]
 # edit = [{ run = 'nvim "$@"', block = true }]
 
+[mgr]
+# ratio = [0, 4, 3]
+show_hidden = true
+
 [task]
-image_bound = [6000,6000]
+image_bound = [6000, 6000]
 
 [[plugin.prepend_previewers]]
 url = "*.tar*"
