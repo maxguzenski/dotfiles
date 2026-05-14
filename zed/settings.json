@@ -90,6 +90,7 @@
   },
   "vim_mode": true,
   "agent": {
+    "flexible": false,
     "dock": "left",
     "inline_assistant_model": {
       "provider": "anthropic",

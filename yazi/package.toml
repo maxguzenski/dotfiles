@@ -1,24 +1,24 @@
 [[plugin.deps]]
 use = "KKV9/compress"
-rev = "c9c16d8"
-hash = "a68bde26a61da040131aa95069f638c2"
+rev = "46a6b9f"
+hash = "771af2becc575a3f43d0542de823969d"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "4e55902"
-hash = "2dd68af59418b631b9703a03f606b31f"
+rev = "5d5c480"
+hash = "384464b6df8cb807425c521f8cd790f3"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "4e55902"
-hash = "8a7c58225816a163a6e8730c0adafbc8"
+rev = "5d5c480"
+hash = "9c7987da2d2a2120dac33abb64132004"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "9276ffa"
-hash = "9b9a8e91898a73c1211788a4ed30336"
+rev = "0670801"
+hash = "67f2240fd9c98f21714527a24cd672f8"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "9276ffa"
-hash = "8d7799e4598ff079fa5ee5c770d9bc08"
+rev = "0670801"
+hash = "7dfe41c9c3d9be76da8a844263d0bbed"
