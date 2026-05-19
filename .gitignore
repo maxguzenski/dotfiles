@@ -13,6 +13,8 @@ yazi/plugins/**
 hypr/current.conf
 ghostty/current.conf
 
+tmux/plugins
+
 # defensive: never commit credentials or private keys
 *.env
 .env.*

@@ -71,7 +71,7 @@
     }
   },
   "collaboration_panel": {
-    "dock": "left",
+    "dock": "right",
     "button": false
   },
   "active_pane_modifiers": {
@@ -188,7 +188,7 @@
   "show_wrap_guides": true,
   "current_line_highlight": "gutter",
   "agent_ui_font_size": 17.0,
-  "buffer_font_weight": 500.0,
+  "buffer_font_weight": 400.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": { "calt": true, "liga": true },
   "ui_font_size": 15.0,
